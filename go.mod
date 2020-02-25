@@ -17,23 +17,27 @@ require (
 	github.com/operator-framework/api v0.0.0-20200120235816-80fd2f1a09c9
 	github.com/operator-framework/operator-lifecycle-manager v0.0.0-20191115003340-16619cd27fa5
 	github.com/otiai10/copy v1.0.1
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
 	github.com/stretchr/testify v1.4.0
-	golang.org/x/net v0.0.0-20191028085509-fe3aa8a45271
+	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
-	google.golang.org/grpc v1.24.0
+	google.golang.org/grpc v1.27.1
 	gopkg.in/yaml.v2 v2.2.4
-	k8s.io/api v0.0.0
-	k8s.io/apiextensions-apiserver v0.0.0
-	k8s.io/apimachinery v0.0.0
+	k8s.io/api v0.17.2
+	k8s.io/apiextensions-apiserver v0.17.2
+	k8s.io/apimachinery v0.17.2
 	k8s.io/client-go v8.0.0+incompatible
 	k8s.io/klog v1.0.0
-	k8s.io/kubectl v0.0.0
+	k8s.io/kubectl v0.17.2
 )
 
 replace (
+	github.com/operator-framework/api => ../api
+	github.com/operator-framework/operator-lifecycle-manager => ../operator-lifecycle-manager
+	google.golang.org/grpc => google.golang.org/grpc v1.23.1
+
 	k8s.io/api => k8s.io/api v0.0.0-20190918155943-95b840bb6a1f
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20190918161926-8f644eb6e783
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190913080033-27d36303b655
